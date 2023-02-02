@@ -8,21 +8,4 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: 3.9
-          cache: "pip"
-          cache-dependency-path: settings.ini
-      - name: Install Dependencies
-        shell: bash
-        run: test -f setup.py && pip install -e ".[dev]"
-      - name: Build docs
-        shell: bash
-        run: |
-          nbdev_docs
-          nbdev_mkdocs docs
-      - run: git fetch origin gh-pages --depth=1
-      - run: git config user.name github-bot
-      - run: git config user.email github-bot@@users.noreply.github.com
-      - run: mike deploy --push --config-file mkdocs/mkdocs.yml --update-aliases 0.0.5 latest
+      - uses: airtai/workflows/nbdev-mkdocs-ghp@add-support-for-docs-versioning

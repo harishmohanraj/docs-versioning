@@ -102,5 +102,4 @@ extra_javascript:
 extra:
   version:
     provider: mike
-    default: stable
   social_image: https://opengraph.githubassets.com/1675218319.162403/harishmohanraj/docs-versioning
