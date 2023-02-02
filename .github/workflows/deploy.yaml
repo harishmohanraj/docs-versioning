@@ -26,4 +26,3 @@ jobs:
       - run: git config user.name github-bot
       - run: git config user.email github-bot@@users.noreply.github.com
       - run: mike deploy --push --config-file mkdocs/mkdocs.yml --update-aliases 0.0.4 latest
-      - run: mike set-default --config-file mkdocs/mkdocs.yml --push latest
