@@ -9,3 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: airtai/workflows/nbdev-mkdocs-ghp@add-support-for-docs-versioning
+        with:
+          versioned_doc_deployments: true
