@@ -1,5 +1,5 @@
 name: Deploy nbdev-mkdocs generated documentation to GitHub Pages
-true:
+on:
   push:
     branches:
     - main
