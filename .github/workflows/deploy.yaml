@@ -1,12 +1,16 @@
 name: Deploy nbdev-mkdocs generated documentation to GitHub Pages
-
-on:
+true:
   push:
-    branches: [ "main", "master" ]
-  workflow_dispatch:
+    branches:
+    - main
+    - master
+  workflow_dispatch: null
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: airtai/workflows/nbdev-mkdocs-ghp@add-support-for-docs-versioning
-
+    - uses: airtai/workflows/nbdev-mkdocs-ghp@add-support-for-docs-versioning
+      with:
+        default_doc_tag: latest
+        doc_deployment_tag: latest
+        doc_deployment_version: 0.0.1
