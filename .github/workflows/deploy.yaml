@@ -12,4 +12,4 @@ jobs:
       with:
         default_doc_tag: latest
         doc_deployment_version: 0.0.5rc0
-        doc_deployment_tag: 0.0.5rc0
+        doc_deployment_tag: dev
