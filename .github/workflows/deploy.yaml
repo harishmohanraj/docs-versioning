@@ -8,4 +8,4 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: airtai/workflows/nbdev-mkdocs-ghp@add-support-for-docs-versioning
+    - uses: airtai/workflows/nbdev-mkdocs-ghp@main
